@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #4d4d4d;
+    color: white;
+    z-index: 1;
+}
+
+#menu {
+    list-style-type: none;
+    display: flex;
+}
+
+#menu li {
+    padding: 1.5em;
+    font-size: 1.3em;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+#menu li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #00aaff;
+    transform: translateY(-10px);
+    transition: 0.4s;
+}

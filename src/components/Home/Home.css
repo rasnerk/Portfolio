@@ -1,0 +1,57 @@
+.home {
+    height: 100vh;
+}
+.background-image {
+    z-index: -1;
+}
+.card {
+    margin-bottom: 3em;
+    padding: 2em 0;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(0,170,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(12px);
+}
+.card h2 {
+    padding-bottom: 1.5em;
+}
+
+.card p {
+    width: 70%;
+}
+
+.card .buttons {
+    padding-top: 1.5em;
+}
+
+.card b {
+    color: #00aaff;
+}
+
+.card b:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    color: white;
+
+    box-shadow: inset 12em 0 0 0 #00aaff;
+}
+
+.button {
+    color: #00aaff;
+    background: none;
+    border: 2px solid #00aaff;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    transition: 0.5s;
+}

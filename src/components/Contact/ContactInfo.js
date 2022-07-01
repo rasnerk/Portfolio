@@ -6,10 +6,10 @@ const ContactInfo = () => {
                     <b>Email:</b>
                     <span style={{marginLeft: "1em"}}>rasnerkeifer@gmail.com</span>    
                 </div>
-                <div>
+                {/* <div>
                     <b>Linkedin:</b>
                     <span style={{marginLeft: "1em"}}>rasnerkeifer@gmail.com</span>    
-                </div>
+                </div> */}
                 <div>
                     <b>Github:</b>
                     <span style={{marginLeft: "1em"}}><a href="https://github.com/rasnerk">rasnerk</a></span>    

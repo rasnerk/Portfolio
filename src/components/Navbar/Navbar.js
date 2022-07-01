@@ -3,7 +3,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div className="navbar">
+        <div className="navbar sticky-top">
             <NavChildren />
         </div>
     )

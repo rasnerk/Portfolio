@@ -1,7 +1,6 @@
 const CodeWrapper = () => {
     return (
-        <div className="background-image" style={{position: "absolute", width: "100%"}}>
-            <img src="imgs/code.jpg" alt="code" style={{width: "100%"}} />
+        <div className="background-image" style={{backgroundImage: "url(imgs/code.jpg)"}}>
         </div>
     )
 }

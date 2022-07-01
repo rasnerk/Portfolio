@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 const Card = () => {
     const navigate = useNavigate()
     return (
-        <div className="card col-5">
+        <div className="card col-11 col-md-9 col-lg-8 col-xl-7 col-xxl-5">
             <h2>Customizable Websites & Applications</h2>
             <div className="d-flex justify-content-center">
                 <p>

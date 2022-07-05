@@ -1,6 +1,9 @@
 .navbar {
-    background-color: #4d4d4d;
+    background-color: rgba(0,0,0,0.5);
+    /* background-color: #4d4d4d; */
     color: white;
+    position: absolute;
+    width: 100%;
     z-index: 2;
 }
 
@@ -12,7 +15,7 @@
 #menu li {
     padding: 1.5em;
     font-size: 1.3em;
-    border-bottom: 1px solid #4d4d4d;
+    /* border-bottom: 1px solid #4d4d4d; */
 }
 
 #menu li:hover {

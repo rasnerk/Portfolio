@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { useFrame } from "@react-three/fiber"
+
 const Lightning = () => {
     const [flash,setFlash] = useState([0,0,0,0,0])
     const [display, setDisplay] = useState(false)
+
     useFrame(() => {
         if(Math.random() > 0.94) {
             let intensity = 0.15;
@@ -28,19 +30,13 @@ const Lightning = () => {
                 default:
                     break;
             }
-            setFlash([Math.floor(Math.random() * (9 - -9 + 1)) + -9,Math.floor(Math.random() * (6 - -1 + 1)) + -1,Math.floor(Math.random() * (3 - -2 + 1) + -2),intensity])
+            setFlash([Math.floor(Math.random() * (9 - -9 + 1)) + -9,Math.floor(Math.random() * (6 - -1 + 1)) + -1,Math.floor(Math.random() * (3 - -2 + 1) + -2),intensity,distance])
             setDisplay(prev => !prev)
         }
     })
 
     return (
-        // flash && 
-        // <mesh>
-        //     <boxBufferGeometry args={[3,3,3]} />
-        //     <meshBasicMaterial color={"hotpink"} />
-        // </mesh>
-        display && <pointLight position={flash} color={"#3399ff"} intensity={flash[3]} distance={flash[4]} decay={1.7} />
-        // flash && <pointLight position={[0,0,0]} color={"#062d89"} intensity={1} distance={10} decay={1.7} />
+        display && <pointLight position={[ flash[0],flash[1],flash[2] ]} color={"#3399ff"} intensity={flash[3]} distance={flash[4]} decay={1.7} />
     )   
 }
 

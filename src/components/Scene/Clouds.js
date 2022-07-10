@@ -1,9 +1,8 @@
-import React, { createRef } from 'react'
+import React from 'react'
 import { useFrame, useLoader } from "@react-three/fiber"
 import * as THREE from "three"
 
 const Clouds = () => {
-    // let clouds = []
     const tool1 = React.useRef();
     const tool2 = React.useRef();
     const tool3 = React.useRef();
@@ -12,7 +11,6 @@ const Clouds = () => {
     const group1 = []
     for (let i=0; i<30; i++) {
         let size = Math.floor(Math.random() * (8 - 3 + 1) +3)
-        // let position = [-15, Math.floor(Math.random() * (5 - -2 + 1)) + -2, 2];
         let position = [Math.floor(Math.random() * (15 - -15 + 1)) + -15, Math.floor(Math.random() * (5 - -2 + 1)) + -2, 2];
         let cloud = <mesh key={i} position={position} >
             <planeBufferGeometry args={[size,size]} />
@@ -24,7 +22,6 @@ const Clouds = () => {
     const group2 = []
     for (let i=0; i<35; i++) {
         let size = Math.floor(Math.random() * (12 - 5 + 1) +5)
-        // let position = [-15, Math.floor(Math.random() * (5 - -2 + 1)) + -2, 2];
         let position = [Math.floor(Math.random() * (25 - -15 + 1)) + -15, Math.floor(Math.random() * (8 - -4 + 1)) + -4, 0];
         let cloud = <mesh key={i} position={position} >
             <planeBufferGeometry args={[size,size]} />
@@ -36,7 +33,6 @@ const Clouds = () => {
     const group3 = []
     for (let i=0; i<15; i++) {
         let size = Math.floor(Math.random() * (25 - 10 + 1) +10)
-        // let position = [-15, Math.floor(Math.random() * (5 - -2 + 1)) + -2, 2];
         let position = [Math.floor(Math.random() * (30 - -20 + 1)) + -20, Math.floor(Math.random() * (10 - -4 + 1)) + -4, 0];
         let cloud = <mesh key={i} position={position} >
             <planeBufferGeometry args={[size,size]} />
@@ -46,8 +42,8 @@ const Clouds = () => {
     }
 
     useFrame( () => {
-        tool1.current.position.x -= 0.005;
-        tool2.current.position.x += 0.0025;
+        tool1.current.position.x -= 0.001;
+        tool2.current.position.x += 0.0015;
         tool3.current.position.x -= 0.005;
     })
 

@@ -1,9 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home'
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact'
-import Scene from './components/Scene/Scene';
 import './App.css'
 
 const App = () => {
@@ -11,10 +8,7 @@ const App = () => {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path='/' element={<Scene />} />
-                {/* <Route path='/' element={<Home />} /> */}
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/contact' element={<Contact />} />
+                <Route path='/' element={<Home />} />
             </Routes>
         </BrowserRouter>
     )

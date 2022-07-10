@@ -8,5 +8,5 @@ export const projectsList = [
 export const comingSoon = [
     { name: "G2 Technologies", img: "imgs/g2.png", repo: "https://github.com/rasnerk/G2-Server", release: false, releaseDate: "08-29-2022" },
     { name: "Little River Country Club", img: "imgs/lrcc.png", repo: "https://github.com/rasnerk/mercury", release: false, releaseDate: "08-03-2022" },
-    { name: "Photography Portfolio", img: "", repo: "", release: false, releaseDate: "7-11-2022" },
+    { name: "Photography Portfolio", img: "imgs/photography-portfolio.png", repo: "", release: false, releaseDate: "7-25-2022" },
 ]

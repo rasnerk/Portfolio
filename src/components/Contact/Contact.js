@@ -10,11 +10,8 @@ const Contact = () => {
             </div>
             <div className='col-12' style={{color: "white", padding: "2em 0"}}>
                 <div className='d-flex flex-column align-items-center'>
-                    <div>THESE WILL BE ICONS</div>
-                    <div>Email: rasnerkeifer@gmail.com</div>
-                    <div>Phone: 906 290-3767</div>
-                    <div>LinkedIn: www.linkedin.com/in/keifer-rasner-01984b243</div>
-                    <div>GitHub: https://github.com/rasnerk</div>
+                    <div><img src='imgs/email.png' alt="email" style={{width: "40px", height: "40px"}} /> rasnerkeifer@gmail.com</div>
+                    <div><img src='imgs/phone.png' alt="phone" style={{width: "40px", height: "40px"}} />Phone: 906 290-3767</div>
                 </div>
             </div>
             <div className='col-12' style={{padding: "3em 0"}}>

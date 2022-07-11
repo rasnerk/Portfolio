@@ -12,16 +12,16 @@ const Lightning = () => {
             const power = Math.random();
             switch (power) {
                 case power > 0.5 && power < 0.74:
-                distance = 25   
-                intensity = 0.2
+                distance = 30   
+                intensity = 0.25
                     break;
                 case power > 0.74 && power < 0.9:
-                    distance = 28
-                    intensity = 0.25
+                    distance = 35
+                    intensity = 0.30
                     break;
                 case power >= 0.9 && power < 0.97:
-                    distance = 33
-                    intensity = 0.3
+                    distance = 35
+                    intensity = 0.35
                     break;
                 case power >= 0.97:
                     intensity = 0.75
@@ -36,7 +36,7 @@ const Lightning = () => {
     })
 
     return (
-        display && <pointLight position={[ flash[0],flash[1],flash[2] ]} color={"#3399ff"} intensity={flash[3]} distance={flash[4]} decay={1.7} />
+        display && <pointLight position={[ flash[0],flash[1],flash[2] ]} color={"#66b3ff"} intensity={flash[3]} distance={flash[4]} decay={1.7} />
     )   
 }
 

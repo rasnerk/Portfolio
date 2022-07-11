@@ -28,9 +28,9 @@ const Links = () => {
                 :
                 displayMenu && 
                 <ul id='menu'>
-                    <li onClick={() => scroll.scrollToTop({duration: 100, smooth: true})}>Home</li>
-                    <li onClick={() => scroller.scrollTo('view-projects', { spy: true, smooth: true, duration: 100 })}>Projects</li>
-                    <li onClick={() => scroller.scrollTo('contact', { spy: true, smooth: true, duration: 100 })}>Contact Me</li>
+                    <li onClick={() => { setDisplayMenu(prev => !prev); scroll.scrollToTop({duration: 100, smooth: true})} }>Home</li>
+                    <li onClick={() => { setDisplayMenu(prev => !prev); scroller.scrollTo('view-projects', { spy: true, smooth: true, duration: 100 }) }}>Projects</li>
+                    <li onClick={() => { setDisplayMenu(prev => !prev); scroller.scrollTo('contact', { spy: true, smooth: true, duration: 100 })} }>Contact Me</li>
                 </ul>
             }
       </div>

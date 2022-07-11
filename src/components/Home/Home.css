@@ -78,3 +78,9 @@
       opacity: 0;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    #keifer div{
+        width: 80vw;
+    } 
+  }

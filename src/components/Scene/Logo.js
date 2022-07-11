@@ -4,12 +4,12 @@ import React from "react"
 const Logo = () => {
     const rotater = React.useRef()
     const wings =  [
-        { rotation: [ 0, 0, Math.PI / 1.5 ], position: [-0.25,0,0]  },
-        { rotation: [ 0, 0, Math.PI / 2.75 ], position: [-2,2.5,0]  },
-        { rotation: [ 0, 0, Math.PI / 1 ], position: [3,0.15,0]  },
-        { rotation: [ 0, 0, -Math.PI / 1.5 ], position: [4.25,3.5,0]  },
-        { rotation: [ 0, 0, -Math.PI / 3.5 ], position: [2,6.1,0]  },
-        { rotation: [ 0, 0, 0 ], position: [-1,6,0]  },
+        { rotation: [ 0, 0, Math.PI / 1.5 ], position: [-0.7,-0.35,0]  },
+        { rotation: [ 0, 0, Math.PI / 2.75 ], position: [-2.55,2.74,0]  },
+        { rotation: [ 0, 0, Math.PI / 1 ], position: [3.1,-0.1,0]  },
+        { rotation: [ 0, 0, -Math.PI / 1.5 ], position: [4.7,3.1,0]  },
+        { rotation: [ 0, 0, -Math.PI / 3.5 ], position: [2.4,6.25,0]  },
+        { rotation: [ 0, 0, 0 ], position: [-1,6.1,0]  },
     ]
     const balls = [
         { position: [8,3,0], size: 0.25 },
@@ -41,10 +41,10 @@ const Logo = () => {
     ))
 
     useFrame(() => {
-        rotater.current.rotation.z += 0.001;
+        rotater.current.rotation.z -= 0.001;
     })
     return (
-        <group ref={rotater} position={[0,-2,-12]}>
+        <group ref={rotater} position={[-1,-2,-12]}>
             {inner}
             {outer}
         </group>

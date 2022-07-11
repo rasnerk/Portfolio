@@ -10,7 +10,7 @@ const Banner = () => {
                     </a>
                 </div>    
             ))}
-            <div className="d-flex flex-wrap" style={{padding: "0 4em"}}>
+            <div id="frameworks" className="d-flex flex-wrap">
                 {frameworks.map(frame => (
                     <div key={frame.name} style={{padding:"0 0.5em"}}>
                         <a href={frame.href} target="_blank" rel="noreferrer">

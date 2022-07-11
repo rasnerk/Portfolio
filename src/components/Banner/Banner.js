@@ -1,4 +1,4 @@
-import { socials } from "../../lib/socials"
+import { socials, frameworks } from "../../lib/socials"
 
 const Banner = () => {
     return (
@@ -10,6 +10,15 @@ const Banner = () => {
                     </a>
                 </div>    
             ))}
+            <div className="d-flex flex-wrap" style={{padding: "0 4em"}}>
+                {frameworks.map(frame => (
+                    <div key={frame.name} style={{padding:"0 0.5em"}}>
+                        <a href={frame.href} target="_blank" rel="noreferrer">
+                            <img src={frame.icon} alt={frame.name} style={{width: "50px", height: "50px"}} />
+                        </a>
+                    </div>    
+                ))}
+            </div>
         </div>
     )
 }

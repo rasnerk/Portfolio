@@ -9,17 +9,14 @@
     width: 40%;
     z-index: 1;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    padding: 1em;
+    border-radius: 0.3em;
+    background-color: rgb(242, 242, 242);
 }
-
 @media screen and (max-width: 600px) {
     .contact-wrapper form{
         opacity: 0.95;
-    }
-    #keifer {
-        top: 2em;
-        right: 0;
-        width: 100%;
-        position: absolute;
+        width: 90%;
     }
     #contact-info {
         padding: 3em 0;

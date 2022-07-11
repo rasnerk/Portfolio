@@ -62,3 +62,19 @@
     padding: 1em 2em;
     transition: 0.5s;
 }
+
+.fadeOut {
+    cursor: pointer;
+    animation: fadeOutAnimation 1.5s 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes fadeOutAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

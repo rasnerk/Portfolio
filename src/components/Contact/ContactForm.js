@@ -2,7 +2,7 @@ const ContactForm = () => {
     const inputs = [{label: "Name", placeholder: "John Smith"},{label: "Email", placeholder: "jsmith@email.com"},{label: "Subject", placeholder: "I like your work!"}]
     return (
         <div id="form-wrapper" className="d-flex justify-content-center">
-            <form style={{padding: "1em", borderRadius: "0.3em", backgroundColor: "rgb(242, 242, 242)"}}>
+            <form>
                 {inputs.map(input => (
                     <div key={input.label} className="form-group row p-2">
                         <label htmlFor={input.label} className="col-sm-2 col-form-label"><b>{input.label}</b></label>

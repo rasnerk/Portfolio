@@ -9,7 +9,7 @@ const Keifer = () => {
             setProfession(
                 <Typing
                     element="h2"
-                    text="< Frontend Developer />"
+                    text="< Full Stack Developer />"
                     shouldDelete={false}
                     typeSpeed={100}
                     styleClass="typing-effect"
@@ -20,7 +20,7 @@ const Keifer = () => {
         },3500)
     }, [])
     return (
-        <div className="d-flex flex-column align-items-center" style={{padding: "8em 0"}}>
+        <div className="d-flex flex-column align-items-center" style={{padding: "8em 0", width: "50vw"}}>
             <Typing
                 element="h2"
                 text="< Keifer Rasner />"

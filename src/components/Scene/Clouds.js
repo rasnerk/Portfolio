@@ -49,7 +49,7 @@ const Clouds = () => {
 
     return (
         <>
-            <group ref={tool1} position={[0,0,0]} >
+            <group ref={tool1} position={[0,-3,0]} >
                 {group1}
             </group>
             <group ref={tool2} position={[0,0,-2]} >

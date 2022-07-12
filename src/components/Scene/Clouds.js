@@ -6,6 +6,7 @@ const Clouds = () => {
     const tool1 = React.useRef();
     const tool2 = React.useRef();
     const tool3 = React.useRef();
+    const tool4 = React.useRef();
     const cloudSkin = useLoader(THREE.TextureLoader, 'imgs/clouds.png')
 
     const group1 = []
@@ -41,10 +42,22 @@ const Clouds = () => {
         group3.push(cloud)
     }
 
+    const group4 = []
+    for (let i=0; i<50; i++) {
+        let size = Math.floor(Math.random() * (25 - 10 + 1) +10)
+        let position = [Math.floor(Math.random() * (100 - 30 + 1)) + 30, Math.floor(Math.random() * (10 - -6 + 1)) + -6, 0];
+        let cloud = <mesh key={i} position={position} >
+            <planeBufferGeometry args={[size,size]} />
+            <meshLambertMaterial map={cloudSkin} transparent={true} opacity={0.65} />
+        </mesh>
+        group4.push(cloud)
+    }
+
     useFrame( () => {
         tool1.current.position.x -= 0.001;
         tool2.current.position.x += 0.0015;
         tool3.current.position.x -= 0.005;
+        tool4.current.position.x -= 0.004;
     })
 
     return (
@@ -57,6 +70,9 @@ const Clouds = () => {
             </group>
             <group ref={tool3} position={[0,0,-6]} >
                 {group3}
+            </group>
+            <group ref={tool4} position={[0,0,-12]}>
+                {group4}
             </group>
         </>
     )

@@ -25,7 +25,6 @@
     transition: 0.4s;
 }
 
-
 #menu-img {
     position: absolute;
     top: 35%;
@@ -49,5 +48,34 @@
     }
     #menu li{
         border: none;
+    }
+    #menu {
+        transform: translateX(-100%);
+    }
+    .slideIn {
+        animation: slideInAnimation 1.5s 1;
+        /* animation-timing-function: ease-out; */
+        animation-fill-mode: forwards;   
+    }
+    .slideOut {
+        animation: slideOutAnimation 1.5s 1;
+        /* animation-timing-function: ease-out; */
+        animation-fill-mode: forwards;   
+    }
+    @keyframes slideInAnimation {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    @keyframes slideOutAnimation {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
     }
 }

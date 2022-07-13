@@ -7,22 +7,24 @@ export const wingCords = [
     { rotation: [ 0, 0, 0 ], position: [-1,6.1,0]  },
 ]
 
-export const ballCords = [
-    { position: [8,3,0], size: 0.25 },
-    { position: [-6,3,0], size: 0.25 },
-    { position: [-4,-2,0], size: 0.25 },
-    { position: [-4,7,0], size: 0.25 },
-    { position: [6,-2,0], size: 0.25 },
-    { position: [6,7,0], size: 0.25 },
-    { position: [1,9,0], size: 0.25 },
-    { position: [1,-3.5,0], size: 0.25 },
+export const innerBalls = [
+    { position: [7.5,0,0], size: 0.25 },
+    { position: [-7.5,0,0], size: 0.25 },
+    { position: [0,7.5,0], size: 0.25 },
+    { position: [0,-7.5,0], size: 0.25 },
+    { position: [-5.25,-5.25,0], size: 0.25 },
+    { position: [5.25,-5.25,0], size: 0.25 },
+    { position: [-5.25,5.25,0], size: 0.25 },
+    { position: [5.25,5.25,0], size: 0.25 }
+]
 
-    { position: [-8,3,0], size: 0.5 },
-    { position: [10,3,0], size: 0.5 },
-    { position: [-5.5,-3.5,0], size: 0.5 },
-    { position: [-5.5,8.5,0], size: 0.5 },
-    { position: [1,-5.5,0], size: 0.5 },
-    { position: [1,11,0], size: 0.5 },
-    { position: [7.5,8.5,0], size: 0.5 },
-    { position: [7.5,-3.5,0], size: 0.5 }
+export const outerBalls = [
+    { position: [-9.5,0,0], size: 0.5 },
+    { position: [9.5,0,0], size: 0.5 },
+    { position: [0,9.5,0], size: 0.5 },
+    { position: [0,-9.5,0], size: 0.5 },
+    { position: [-6.75,-6.75,0], size: 0.5 },
+    { position: [6.75,6.75,0], size: 0.5 },
+    { position: [-6.75,6.75,0], size: 0.5 },
+    { position: [6.75,-6.75,0], size: 0.5 },
 ]

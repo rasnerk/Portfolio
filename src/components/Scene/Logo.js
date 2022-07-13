@@ -1,24 +1,41 @@
 import { useFrame } from "@react-three/fiber"
 import LogoWings from "./LogoWings"
 import React from "react"
-import { wingCords, ballCords } from "../../lib/logoCoordinates"
+import { wingCords, innerBalls, outerBalls } from "../../lib/logoCoordinates"
 
 const Logo = () => {
-    const rotater = React.useRef()
+    const smallRingRotater = React.useRef()
+    const largeRingRotater = React.useRef()
     const inner = wingCords.map( (wing,i) => <LogoWings key={i} rotation={wing.rotation} position={wing.position} /> )
-    const outer = ballCords.map( (ball,i) => (
+    const smallRing = innerBalls.map( (ball,i) => (
+        <mesh key={i} position={ball.position}>
+            <sphereGeometry args={[ball.size, 64,32]} />
+            <meshPhysicalMaterial roughness={0} metalness={1} color={"#0095eb"} emissive={"#001f33"} />
+        </mesh>
+    ))
+    const largeRing = outerBalls.map( (ball,i) => (
         <mesh key={i} position={ball.position}>
             <sphereGeometry args={[ball.size, 64,32]} />
             <meshPhysicalMaterial roughness={0} metalness={1} color={"#0095eb"} emissive={"#001f33"} />
         </mesh>
     ))
 
-    useFrame( () => rotater.current.rotation.z -= 0.001 )
+    useFrame( () => {
+        smallRingRotater.current.rotation.z -= 0.0025
+        largeRingRotater.current.rotation.z += 0.0025
+    } )
     
     return (
-        <group ref={rotater} position={[-1,-2,-12]}>
-            {inner}
-            {outer}
+        <group position={[0,-1,-2]}>
+            <group position={[0,-2,0]}>
+                {inner}
+            </group>
+            <group ref={smallRingRotater} position={[1,1,0]}>
+                {smallRing}
+            </group>
+            <group ref={largeRingRotater} position={[1,1,0]}>
+                {largeRing}
+            </group>
         </group>
     )
 }

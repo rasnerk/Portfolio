@@ -18,7 +18,7 @@ const Scene = () => {
     return (
         <div className="canvas-container">
             <Banner />
-            <Canvas id="canvas" camera={{position: [0,0,10]}}>
+            <Canvas id="canvas" camera={{position: [0,0,15]}}>
                 {width > 600 ?
                     <ambientLight color="#8585ad" intensity={0.4} />
                     :

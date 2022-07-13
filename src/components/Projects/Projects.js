@@ -10,7 +10,7 @@ const Projects = () => {
             </div>
             {projectsList.map(proj => <Project key={proj.name} data={proj} /> )}
             <div className="col-12" style={{textAlign: "center", color: "white", padding: "4em 0", borderBottom: "1px solid white", marginBottom: "4em"}}>
-                <h2>Coming Soon...</h2>
+                <h2>Unreleased Projects...</h2>
             </div>
             {comingSoon.map(proj => <Project key={proj.name} data={proj} /> )}
         </div>

@@ -1,6 +1,7 @@
 export const projectsList = [
     { name: "KCK Fitness", img: "imgs/KCK.png", repo: "https://github.com/rasnerk/kck-fitness", site: "https://kckfitness.com" },
     { name: "Earth", img: "imgs/earth.png", repo: "https://github.com/rasnerk/earth", site: "https://rasnerk.github.io/earth/" },
+    { name: "Rotten Flix", img: "imgs/rotten-flix.png", repo: "https://github.com/rasnerk/Rotten-Flix-Client", site: "https://rottenflix.netlify.app" },
     { name: "Mars", img: "imgs/mars.png", repo: "https://github.com/rasnerk/mars", site: "https://rasnerk.github.io/mars/" },
     { name: "Mercury", img: "imgs/mercury.png", repo: "https://github.com/rasnerk/mercury", site: "https://rasnerk.github.io/mercury/" },
 ]

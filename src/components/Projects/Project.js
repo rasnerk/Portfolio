@@ -8,7 +8,7 @@ const Project = ({ data }) => {
             {data.release === false ? 
                 <div className="cover">
                     <h3>{data.name}</h3>
-                    <h4 style={{color: "#00aaff", textDecoration: "underline"}}>{data.releaseDate}</h4>
+                    {/* <h4 style={{color: "#00aaff", textDecoration: "underline"}}>{data.releaseDate}</h4> */}
                 </div>
                 :
                 <h3>{data.name}</h3>
